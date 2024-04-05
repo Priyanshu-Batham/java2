@@ -22,13 +22,12 @@ public class Test extends Applet implements Runnable {
     }
 
     public void paint(Graphics g) {
-        // Third phase of Applet Life Cycle
         g.fillRect(posX, 0, 100, 100);
         posX += 50;
         posX %= 1500;
     }
 
-    // Fourth phase: Stop() & Fifth phase: destroy() are not used coz no need
+    // Third phase: Stop() & Fourth phase: destroy() are not used coz no need
     // now make the run() method for the thread to repetedly execute the paint()
     // using repaint()
     public void run() {
