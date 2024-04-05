@@ -10,7 +10,7 @@ public class Calcu extends Applet implements ActionListener{
     //declaring awt components
     TextField tf1, tf2, tf3; 
     Button plusBtn, minusBtn, mulBtn, divBtn, clrBtn;
-    int oprA, oprB, result;
+
     public void init(){
         setLayout(null); //disabling the default layout manager for applet container
 
@@ -60,10 +60,11 @@ public class Calcu extends Applet implements ActionListener{
     }
     // adding action handler(function) for action listener
     public void actionPerformed(ActionEvent ae){
-        oprA = Integer.parseInt(tf1.getText());
-        oprB = Integer.parseInt(tf2.getText());
+        int oprA = Integer.parseInt(tf1.getText());
+        int oprB = Integer.parseInt(tf2.getText());
+        int result;
 
-        Button clickedBtn = (Button)ae.getSource();
+        Button clickedBtn = (Button)ae.getSource(); //getSource return type if Object so we type convert it to get a Button type reference
 
         if(clickedBtn == clrBtn){
             tf1.setText("");
