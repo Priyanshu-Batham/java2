@@ -15,6 +15,4 @@ class Hcf{
 		System.out.println("HCF or GCD: "+b);
 	}
 }
-//temp 3
-//a    12
-//b    3
+

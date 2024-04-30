@@ -15,6 +15,6 @@ class LargeSmol{
 		}while(--num > 0);
 
 		System.out.println("Biggest Number: "+big);
-		System.out.println("Smollest Number: "+smol);
+		System.out.println("Smallest Number: "+smol);
 	}
 }

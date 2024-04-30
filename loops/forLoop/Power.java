@@ -9,7 +9,7 @@ class Power{
 
 		int answer = base;
 
-		for(expo = expo; expo>1; expo--){
+		for(; expo>1; expo--){
 			answer *= base;
 		}
 

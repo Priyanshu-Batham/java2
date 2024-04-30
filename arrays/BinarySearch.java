@@ -26,7 +26,7 @@ class BinarySearch{
     while(low <= high){
       int mid = (low+high)/2;
       if(arr[mid] == num){
-        System.out.print(num + " found at index " + mid);
+        System.out.print(num + "is present");
         flag = true;
         break;
       }
